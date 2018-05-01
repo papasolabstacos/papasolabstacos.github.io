@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <meta name="description" content="Proof of Tacos (POT) - earn ETH for just hold delicious Tacos!">
+    <meta name="author" content="">
+
+    <title>Proof of Tacos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+    <!--imported scripts -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="splash/semantic/dist/semantic.min.js"></script>
+    <script src="splash/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script>
+    <script src="js/alertify.js"></script>
+    <script src="js/buy.js"></script>
+    <script src="js/ls.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+
+    <!-- script for important stuff -->
+    <script type="text/javascript" src="./js/extra.css"></script>
+
+    <!-- STYLESHEETS -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="splash/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="splash/css/main.css">
+    <link rel="stylesheet" type="text/css" href="splash/css/token_sale.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="css/alertify.core.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/alertify.default.css" id="toggleCSS" />
+    <link rel="stylesheet" type="text/css" href="./css/extra.css" />
+
+</head>
+
+<body style="background-image:url(./img/taco-background.jpg)";>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="./index.html"><img src="./img/tacos.png" alt="taco-logo" align="middle" height="30"> &nbsp; Proof of Tacos</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./index.html#guidelines">Guidelines &nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./index.html#guidelines">Smart Contract &nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./exchange.html">Exchange &nbsp;</a>
+            </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+    <div class="ui grid container app interface" style="height: 1500px;">
+    <small>Remember, you need to install and configure MetaMask to interact with this page.</small>
+    <div class="ui raised segment">
+    <div class="ui grid app testframe">
+    <div class="ui grid">
+
+            <span class="eth" style="display: table; margin: auto;">
+               &nbsp;<img src="./img/eth-black.svg" height="30">&nbsp;
+               <b id="ethInContract"> - Ethereum</b> in contract 
+            </span>
+               <br>
+            <span class="tokens" style="display: table; margin: auto;"> 
+               <img src="./img/tacos.png" height="30">&nbsp;
+               <b id="tokensInCirculation"> - TACOS</b> in circulation 
+            </span>
+
+           <br><br><br><br><br>  
+
+    <div class="ui grid container app interface" style="height: 1400px;">
+    <div class="ui raised segment">
+
+    <div class="ui grid app testframe">
+    <div class="ui grid">
+
+    <div class="two column row divided">
+
+    <div class="column buy">
+      <h2 class="ui aligned icon header">Buy Tacos</h2>
+      <div class="ui centered grid">
+         <div class="row">
+            <div class="six wide column">
+               <form class="ui form">
+                  <div class="field">
+                     <input name="first-name" placeholder="ETH" type="text" />
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="row no-padding">
+            <div class="column" style="text-align: center;">
+               <span class="approx"><small>ETH quantity</small></span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="six wide column">
+               <button class="ui right labeled massive icon button" style="padding-right: 0 !important; padding-left: 0 !important; color: #fff;background: #fec107;">BUY</button>
+            </div>
+         </div>
+      </div>
+    </div>
+
+
+    <div class="column sell">
+      <h2 class="ui aligned icon header">Sell Tacos</h2>
+      <div class="ui centered grid">
+         <div class="row">
+            <div class="six wide column">
+               <form class="ui form">
+                  <div class="field">
+                     <input name="first-name" placeholder="TACOS" type="text" />
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="row no-padding">
+            <div class="column" style="text-align: center;">
+               <span class="approx"><small>TACOS quantity</small></span>
+            </div>
+         </div>
+         <div class="row">
+            <div class="six wide column">
+               <button class="ui right labeled massive icon button" style="padding-right: 0 !important; padding-left: 0 !important; color: #fff;background: #fec107;">SELL</button>
+            </div>
+         </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="ui divider">
+    <div class="ui grid">
+    <div class="row" style="margin-top: 25px; text-align: center;">
+      <span style="width: 50%; display: table; margin: auto;">
+      <button id="reinvest" class="ui huge button" style="color: #fff;
+         background: #fec107 none;">Reinvest earnings</button>
+      </span>
+      <span style="width: 50%; display: table; margin: auto;">
+      <button id="withdraw" class="ui huge button" style="color: #fff;
+         background: #fec107 none;">Withdraw earnings</button>
+      </span>
+    </div>
+
+    <div class="ui divider">
+    <div class="ui grid">
+    <div class="row" style="margin-top: 25px; text-align: center;">
+        <div id="myTokens" style="width: 49%;">
+            <div style="display: table;margin: auto;text-align: center;">
+                <span class="identifier">Your Tacos</span>&nbsp;
+                <span class="count" style="font-weight: bold;font-size: 25pt;"> - </span>
+                <br><br>
+                <span class="convertedToETH">( - ETH)</span>&nbsp;&nbsp;
+                <span class="converted">( - USD)</span>
+            </div>
+        </div>
+        <div id="myDividends" style="width: 49%;">
+            <div style="display: table;margin: auto;text-align: center;">
+                <span class="identifier">Your Earnings (ETH)</span>&nbsp;
+                <span class="count" style="font-weight: bold;font-size: 25pt;"> - </span>
+                <br><br>
+                <span class="converted">( - USD)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="column transfer">
+         <div class="ui divider"></div>
+         <h2 class="ui aligned icon header" style="font-size: 19pt;margin-top: 30px;">Transfer Tacos</h2>
+
+         <div class="ui centered grid">
+            <div class="row">
+               <div class="six wide column">
+                  <form class="ui form">
+                     <div class="field">
+                        <input id="transferAddress" placeholder="Address.." type="text" />
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="row">
+               <div class="six wide column">
+                  <form class="ui form">
+                     <div class="field">
+                        <input id="transferTokenCount" placeholder="Amount of Tacos.." type="text" />
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="row no-padding">
+            </div>
+            <div class="row">
+               <div class="six wide column">
+                  <button class="ui icon button" style="color: #fff;
+                     background: #fec107 none;">Transfer</button>
+               </div>
+            </div>
+            <div class="ui divider"></div>
+         </div>
+         <div style="height: 500px; width: auto; margin-top: 50px;">
+            <iframe src="https://titanembeds.com/embed/440621303452532737?defaultchannel=defaultchannel=440621303452532737&theme=theme=BetterTitan&userscalable=userscalable=false" height="500" width="100%" frameborder="0">
+         </div>         
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>
