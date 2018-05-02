@@ -18,7 +18,7 @@ $(document).ready(function() {
         if (ws.readyState == WebSocket.OPEN) {
             ws.send(JSON.stringify({
                 "event": "txlist",
-                "address": "0x7063beF3847f36C0324FfB7b7cF75303Bb04f756"
+                "address": "0xB33208B52d1d0Fca86DabfF07db76780470A3749"
             }));
         }
     };
@@ -27,7 +27,7 @@ $(document).ready(function() {
         var result;
         if (obj.result != null) {
             for (var i = 0; i < obj.result.length; i++) {
-                if (obj.result[i].to.toString() == "0x7063beF3847f36C0324FfB7b7cF75303Bb04f756") {
+                if (obj.result[i].to.toString() == "0xB33208B52d1d0Fca86DabfF07db76780470A3749") {
                     if (obj.result[i].value) {
                         var eth = parseFloat(obj.result[i].value);
 
